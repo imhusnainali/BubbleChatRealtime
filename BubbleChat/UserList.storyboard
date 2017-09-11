@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DFY-Eg-nZv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Friends-->
+        <scene sceneID="8Kq-uP-sz5">
+            <objects>
+                <tableViewController id="alx-fi-fh2" customClass="UserListController" customModule="BubbleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="KwW-mz-bBd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="BVq-gy-s26">
+                                <rect key="frame" x="0.0" y="55" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BVq-gy-s26" id="8xG-oi-0Bs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="alx-fi-fh2" id="eUP-qW-grD"/>
+                            <outlet property="delegate" destination="alx-fi-fh2" id="0Xj-ce-f44"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Friends" id="HrT-Cd-X78"/>
+                    <connections>
+                        <segue destination="LDY-tT-I6u" kind="show" identifier="UserProfileController" id="bTw-eK-leu">
+                            <nil key="action"/>
+                        </segue>
+                        <segue destination="HCm-Iu-LuJ" kind="show" identifier="ChatController" id="x2K-7S-x0D"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxr-DV-nSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-916" y="940"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="1pG-b5-ReG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DFY-Eg-nZv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Friends" image="friendsIcon" selectedImage="selected_friendsIcon" id="os9-yu-M5u"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v2Q-Ot-qRU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="alx-fi-fh2" kind="relationship" relationship="rootViewController" id="jyb-n1-Ws4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwU-aH-2NR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1630" y="940"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="qDj-Cs-Naf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="HCm-Iu-LuJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXc-2j-G0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186" y="815"/>
+        </scene>
+        <!--UserProfile-->
+        <scene sceneID="iWR-g4-rqR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserProfile" id="LDY-tT-I6u" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMD-BT-bkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-185" y="940"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="friendsIcon" width="30" height="30"/>
+        <image name="selected_friendsIcon" width="30" height="30"/>
+    </resources>
+</document>

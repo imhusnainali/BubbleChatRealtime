@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="209" id="LNe-oQ-ynp" customClass="FriendCell" customModule="BubbleChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="541" height="209"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LNe-oQ-ynp" id="vgb-eL-w5k">
+                <rect key="frame" x="0.0" y="0.0" width="541" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lnu-Jf-E8c">
+                        <rect key="frame" x="15" y="80" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="88g-Xc-hjv"/>
+                            <constraint firstAttribute="height" constant="50" id="JUP-J0-hpR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lH2-UG-qah">
+                        <rect key="frame" x="80" y="94.5" width="333" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" red="0.33333334329999997" green="0.33333333329999998" blue="0.33333334329999997" alpha="0.63" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="254" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCn-Lf-woN" customClass="GradientButton" customModule="BubbleChat" customModuleProvider="target">
+                        <rect key="frame" x="428" y="84.5" width="90" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="o3Q-Wz-mwT"/>
+                            <constraint firstAttribute="height" constant="40" id="zJ1-5d-lt9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <state key="normal" title="Chat">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="handleSendMessageTapped:" destination="LNe-oQ-ynp" eventType="touchUpInside" id="9Ng-56-xqJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lnu-Jf-E8c" firstAttribute="leading" secondItem="vgb-eL-w5k" secondAttribute="leading" constant="15" id="69L-dp-90a"/>
+                    <constraint firstItem="Lnu-Jf-E8c" firstAttribute="centerY" secondItem="vgb-eL-w5k" secondAttribute="centerY" id="9dW-b6-OZm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KCn-Lf-woN" secondAttribute="trailing" constant="15" id="BhK-oQ-SxN"/>
+                    <constraint firstItem="KCn-Lf-woN" firstAttribute="leading" secondItem="lH2-UG-qah" secondAttribute="trailing" constant="15" id="LXd-X1-9Do"/>
+                    <constraint firstItem="lH2-UG-qah" firstAttribute="centerY" secondItem="vgb-eL-w5k" secondAttribute="centerY" id="QWd-NH-4Yj"/>
+                    <constraint firstItem="KCn-Lf-woN" firstAttribute="centerY" secondItem="vgb-eL-w5k" secondAttribute="centerY" id="YHn-p1-w72"/>
+                    <constraint firstItem="lH2-UG-qah" firstAttribute="leading" secondItem="Lnu-Jf-E8c" secondAttribute="trailing" constant="15" id="bPT-ds-0S1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="sendButton" destination="KCn-Lf-woN" id="wp5-Pb-gzX"/>
+                <outlet property="userImageView" destination="Lnu-Jf-E8c" id="lsq-es-G9T"/>
+                <outlet property="userNameLabel" destination="lH2-UG-qah" id="0ZT-sk-Ksd"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="131.5"/>
+        </tableViewCell>
+    </objects>
+</document>

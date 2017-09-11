@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="108" id="uT9-aO-ZxJ" customClass="ConversationTableCell" customModule="BubbleChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="529" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uT9-aO-ZxJ" id="x0X-Bl-ufD">
+                <rect key="frame" x="0.0" y="0.0" width="529" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9sy-Rm-NRc">
+                        <rect key="frame" x="15" y="19" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="6Dw-dl-zaN"/>
+                            <constraint firstAttribute="height" constant="70" id="Mc1-9h-O8k"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFK-bx-hl7">
+                        <rect key="frame" x="104.5" y="39" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="0.63246468320000004" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBZ-dS-Xhk">
+                        <rect key="frame" x="104.5" y="69" width="409.5" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.66666668650000005" green="0.66666666669999997" blue="0.66666668650000005" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KX8-6D-Nsq">
+                        <rect key="frame" x="509" y="39" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.66666668650000005" green="0.66666666669999997" blue="0.66666668650000005" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gBZ-dS-Xhk" firstAttribute="centerY" secondItem="x0X-Bl-ufD" secondAttribute="centerY" constant="15" id="20i-80-Z5W"/>
+                    <constraint firstItem="KFK-bx-hl7" firstAttribute="leading" secondItem="9sy-Rm-NRc" secondAttribute="trailing" constant="20" id="5IY-hu-oHT"/>
+                    <constraint firstItem="9sy-Rm-NRc" firstAttribute="centerY" secondItem="x0X-Bl-ufD" secondAttribute="centerY" id="7BC-cM-9cu"/>
+                    <constraint firstItem="gBZ-dS-Xhk" firstAttribute="leading" secondItem="KFK-bx-hl7" secondAttribute="leading" id="M1M-US-k73"/>
+                    <constraint firstAttribute="trailing" secondItem="gBZ-dS-Xhk" secondAttribute="trailing" constant="15" id="S35-qk-jAQ"/>
+                    <constraint firstItem="KX8-6D-Nsq" firstAttribute="centerY" secondItem="KFK-bx-hl7" secondAttribute="centerY" id="VAl-Rb-TbX"/>
+                    <constraint firstAttribute="trailing" secondItem="KX8-6D-Nsq" secondAttribute="trailing" constant="20" id="aLh-XC-QvF"/>
+                    <constraint firstItem="KFK-bx-hl7" firstAttribute="centerY" secondItem="x0X-Bl-ufD" secondAttribute="centerY" constant="-15" id="krn-7M-AZZ"/>
+                    <constraint firstItem="9sy-Rm-NRc" firstAttribute="leading" secondItem="x0X-Bl-ufD" secondAttribute="leading" constant="15" id="uvc-lR-v9g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="timestampLabel" destination="KX8-6D-Nsq" id="sUM-Te-CLU"/>
+                <outlet property="userImageView" destination="9sy-Rm-NRc" id="Npf-kF-x83"/>
+                <outlet property="userMessageLabel" destination="gBZ-dS-Xhk" id="vkl-qb-9he"/>
+                <outlet property="userNameLabel" destination="KFK-bx-hl7" id="es2-wu-pBw"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="1"/>
+        </tableViewCell>
+    </objects>
+</document>

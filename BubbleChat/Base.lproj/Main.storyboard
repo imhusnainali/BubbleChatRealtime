@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wI6-av-GTZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ld7-X0-U3p">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wI6-av-GTZ" customClass="TabBarController" customModule="BubbleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6Xb-MU-AMb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1kb-EU-Q5w" kind="relationship" relationship="viewControllers" id="KJu-wK-83e"/>
+                        <segue destination="vfv-Kj-ehp" kind="relationship" relationship="viewControllers" id="m5e-S3-tkC"/>
+                        <segue destination="9ri-gw-kiZ" kind="relationship" relationship="viewControllers" id="cyR-h6-ku3"/>
+                        <segue destination="sBu-sC-7Yn" kind="relationship" relationship="viewControllers" id="ZoK-9t-gwB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lsh-Ea-jgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="-944"/>
+        </scene>
+        <!--UserList-->
+        <scene sceneID="HmM-Y0-E2O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserList" id="1kb-EU-Q5w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Friends" image="friendsIcon" id="dmK-nW-Oco"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8Q-0U-7sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="-491"/>
+        </scene>
+        <!--ConversationList-->
+        <scene sceneID="URo-7m-GPp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ConversationList" id="vfv-Kj-ehp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" image="bubbleIcon" id="oMq-87-jrd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kz6-Gp-ozO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="-491"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="HsV-Oa-Azu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" id="9ri-gw-kiZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="notificationIcon" selectedImage="selected_notificationIcon" id="DSk-bE-HRp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7p-Od-9NM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="-495"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="uZy-Zf-gZm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="sBu-sC-7Yn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="profileIcon" selectedImage="selected_profileIcon" id="IrR-AU-Wbv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrg-he-9S8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="-496"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubbleIcon" width="30" height="30"/>
+        <image name="friendsIcon" width="30" height="30"/>
+        <image name="notificationIcon" width="30" height="30"/>
+        <image name="profileIcon" width="30" height="30"/>
+        <image name="selected_notificationIcon" width="30" height="30"/>
+        <image name="selected_profileIcon" width="30" height="30"/>
+    </resources>
+</document>

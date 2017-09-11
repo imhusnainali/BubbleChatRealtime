@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TbQ-Yh-sXT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Step One Controller-->
+        <scene sceneID="7Z6-aW-P1x">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingStepOneController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PXK-Tr-Km0" customClass="OnboardingStepOneController" customModule="BubbleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hMY-NS-iqo"/>
+                        <viewControllerLayoutGuide type="bottom" id="riJ-16-NxF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TPg-p4-VYo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jy-c0-V0R">
+                                <rect key="frame" x="116.5" y="343" width="143" height="44"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <color key="textColor" red="0.42391735409999998" green="0.42391735409999998" blue="0.42391735409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ligula tempor." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icm-P4-QeA">
+                                <rect key="frame" x="52" y="407" width="277" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qV0-Bu-Bw2"/>
+                                </constraints>
+                                <color key="textColor" red="0.68900697970000002" green="0.68900697970000002" blue="0.68900697970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="icm-P4-QeA" firstAttribute="top" secondItem="5jy-c0-V0R" secondAttribute="bottom" constant="20" id="1BX-iB-diM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="icm-P4-QeA" secondAttribute="trailing" constant="30" id="1r0-yp-O2G"/>
+                            <constraint firstItem="icm-P4-QeA" firstAttribute="leading" secondItem="TPg-p4-VYo" secondAttribute="leadingMargin" constant="36" id="JoM-aI-j9G"/>
+                            <constraint firstItem="5jy-c0-V0R" firstAttribute="centerX" secondItem="TPg-p4-VYo" secondAttribute="centerX" id="g8J-qa-X0x"/>
+                            <constraint firstItem="riJ-16-NxF" firstAttribute="top" secondItem="icm-P4-QeA" secondAttribute="bottom" constant="160" id="iUY-FE-itw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ef7-8b-1uO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-425" y="-278"/>
+        </scene>
+        <!--Onboarding Root Controller-->
+        <scene sceneID="461-sW-Ext">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingRootController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tg9-sm-ImO" customClass="OnboardingRootController" customModule="BubbleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fiI-eb-gL7"/>
+                        <viewControllerLayoutGuide type="bottom" id="BdN-cV-YlL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zbS-qH-Ra8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2X-w7-2gi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="8FS-46-iDc" kind="embed" id="I4c-25-OPz"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hK-ly-2t1">
+                                <rect key="frame" x="0.0" y="556" width="375" height="110.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHU-eG-nll">
+                                        <rect key="frame" x="54" y="58.5" width="267" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Already have an account? Login here">
+                                            <color key="titleColor" red="0.68900697970000002" green="0.68900697970000002" blue="0.68900697970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="K66-La-3rG" kind="show" id="Cib-Wd-vBU">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4q-dX-vPK" customClass="GradientButton" customModule="BubbleChat" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="-16.5" width="180" height="60"/>
+                                        <color key="backgroundColor" red="0.1983778212" green="0.4191894531" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Mg5-DM-zqx"/>
+                                            <constraint firstAttribute="width" constant="180" id="siV-pS-3xr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="1qa-R1-DnU" kind="show" id="325-FI-Dkc">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OHU-eG-nll" firstAttribute="top" secondItem="U4q-dX-vPK" secondAttribute="bottom" constant="15" id="Hb3-fs-ke1"/>
+                                    <constraint firstItem="OHU-eG-nll" firstAttribute="centerX" secondItem="0hK-ly-2t1" secondAttribute="centerX" id="Qj7-qw-YyM"/>
+                                    <constraint firstAttribute="bottom" secondItem="OHU-eG-nll" secondAttribute="bottom" constant="20" id="bcz-Y5-58a"/>
+                                    <constraint firstItem="U4q-dX-vPK" firstAttribute="centerX" secondItem="0hK-ly-2t1" secondAttribute="centerX" id="q3t-7i-348"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbleImage" translatesAutoresizingMaskIntoConstraints="NO" id="pFI-Z3-0tC">
+                                <rect key="frame" x="78.5" y="79" width="217" height="217"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pFI-Z3-0tC" secondAttribute="height" multiplier="1:1" id="DdK-bQ-Zj2"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qDx-oJ-udf">
+                                <rect key="frame" x="168" y="304" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0hK-ly-2t1" firstAttribute="height" secondItem="G2X-w7-2gi" secondAttribute="height" multiplier="1/5" constant="-10" id="59y-NA-L9C"/>
+                            <constraint firstItem="0hK-ly-2t1" firstAttribute="leading" secondItem="G2X-w7-2gi" secondAttribute="leading" id="9Ax-Cp-DHC"/>
+                            <constraint firstItem="G2X-w7-2gi" firstAttribute="top" secondItem="pFI-Z3-0tC" secondAttribute="top" constant="-15" id="HBh-Zk-jbY"/>
+                            <constraint firstAttribute="trailing" secondItem="G2X-w7-2gi" secondAttribute="trailing" id="KxC-eG-h1e"/>
+                            <constraint firstItem="qDx-oJ-udf" firstAttribute="top" secondItem="pFI-Z3-0tC" secondAttribute="bottom" constant="8" id="OWM-Hg-zMk"/>
+                            <constraint firstItem="0hK-ly-2t1" firstAttribute="trailing" secondItem="G2X-w7-2gi" secondAttribute="trailing" id="Qfq-VF-he9"/>
+                            <constraint firstItem="pFI-Z3-0tC" firstAttribute="height" secondItem="G2X-w7-2gi" secondAttribute="height" multiplier="0.36" id="W9H-xz-dsz"/>
+                            <constraint firstItem="qDx-oJ-udf" firstAttribute="centerX" secondItem="G2X-w7-2gi" secondAttribute="centerX" id="eS8-Lk-FQV"/>
+                            <constraint firstItem="BdN-cV-YlL" firstAttribute="top" secondItem="G2X-w7-2gi" secondAttribute="bottom" id="g0q-Cx-VmJ"/>
+                            <constraint firstItem="G2X-w7-2gi" firstAttribute="top" secondItem="fiI-eb-gL7" secondAttribute="bottom" id="jFE-iC-BPA"/>
+                            <constraint firstItem="pFI-Z3-0tC" firstAttribute="centerX" secondItem="G2X-w7-2gi" secondAttribute="centerX" id="sAl-dq-G1V"/>
+                            <constraint firstItem="G2X-w7-2gi" firstAttribute="leading" secondItem="zbS-qH-Ra8" secondAttribute="leading" id="saz-2m-XWE"/>
+                            <constraint firstItem="0hK-ly-2t1" firstAttribute="bottom" secondItem="G2X-w7-2gi" secondAttribute="bottom" id="wbw-fY-MU7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MdT-cx-f6z"/>
+                    <connections>
+                        <outlet property="containerView" destination="G2X-w7-2gi" id="B2B-4d-B8x"/>
+                        <outlet property="loginButton" destination="OHU-eG-nll" id="K7A-kS-BzF"/>
+                        <outlet property="pageControl" destination="qDx-oJ-udf" id="mlD-Yf-eGG"/>
+                        <outlet property="signUpButton" destination="U4q-dX-vPK" id="V3T-eI-Ndp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EhU-B2-GSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1807.2" y="-277.51124437781112"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="SWP-Th-RHQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="K66-La-3rG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAk-X8-Yki" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2054" y="197"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="V2s-B2-lqN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="1qa-R1-DnU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BlG-Ot-FGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1569" y="197"/>
+        </scene>
+        <!--Onboarding Page Controller-->
+        <scene sceneID="I2w-G2-Ws5">
+            <objects>
+                <pageViewController storyboardIdentifier="OnboardingPageController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="8FS-46-iDc" customClass="OnboardingPageController" customModule="BubbleChat" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dQ-0g-Sez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1114" y="-306"/>
+        </scene>
+        <!--Onboarding Step Four Controller-->
+        <scene sceneID="ACJ-nn-scb">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingStepFourController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sc1-em-O6F" customClass="OnboardingStepFourController" customModule="BubbleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uTV-3J-tvQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JY6-Fa-ZkU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P2g-M0-psq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vivamus semper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5r-BF-m0c">
+                                <rect key="frame" x="76" y="343.5" width="223" height="44"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <color key="textColor" red="0.42391735409999998" green="0.42391735409999998" blue="0.42391735409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Donec vulputate odio orci, quis scelerisque massa semper quis. Aenean velenim. Nam mollis felis et nunc varius, vitae." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RA4-NI-hcQ">
+                                <rect key="frame" x="52" y="407" width="277" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kGa-90-PTn"/>
+                                </constraints>
+                                <color key="textColor" red="0.6328918147" green="0.6328918147" blue="0.6328918147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RA4-NI-hcQ" firstAttribute="leading" secondItem="P2g-M0-psq" secondAttribute="leadingMargin" constant="36" id="9Yd-XM-bw1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RA4-NI-hcQ" secondAttribute="trailing" constant="30" id="Ljg-I8-mGg"/>
+                            <constraint firstItem="RA4-NI-hcQ" firstAttribute="top" secondItem="j5r-BF-m0c" secondAttribute="bottom" constant="20" id="SJx-er-YkU"/>
+                            <constraint firstItem="j5r-BF-m0c" firstAttribute="centerX" secondItem="P2g-M0-psq" secondAttribute="centerX" id="q3r-T7-qCu"/>
+                            <constraint firstItem="JY6-Fa-ZkU" firstAttribute="top" secondItem="RA4-NI-hcQ" secondAttribute="bottom" constant="160" id="vrO-wU-Pae"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljk-Dw-lpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="-278"/>
+        </scene>
+        <!--Onboarding Step Two Controller-->
+        <scene sceneID="g6G-tF-JV5">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingStepTwoController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DQz-Ba-Sx6" customClass="OnboardingStepTwoController" customModule="BubbleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v1c-4Q-Yun"/>
+                        <viewControllerLayoutGuide type="bottom" id="4RD-v9-wRO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4VN-F5-Pua">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8J-pP-DrX">
+                                <rect key="frame" x="98" y="343.5" width="180" height="44"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <color key="textColor" red="0.42391735409999998" green="0.42391735409999998" blue="0.42391735409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text=" Aenean commodo pulvinar diam vitae porta. Sed bibendum, nulla at faucibus pretium." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCq-zl-h4s">
+                                <rect key="frame" x="52" y="407" width="277" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4Jb-k6-pYC"/>
+                                </constraints>
+                                <color key="textColor" red="0.6328918147" green="0.6328918147" blue="0.6328918147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sCq-zl-h4s" firstAttribute="leading" secondItem="4VN-F5-Pua" secondAttribute="leadingMargin" constant="36" id="9hj-fO-0rC"/>
+                            <constraint firstItem="sCq-zl-h4s" firstAttribute="top" secondItem="X8J-pP-DrX" secondAttribute="bottom" constant="20" id="GYh-8C-5li"/>
+                            <constraint firstItem="X8J-pP-DrX" firstAttribute="centerX" secondItem="4VN-F5-Pua" secondAttribute="centerX" id="lDM-x1-KPl"/>
+                            <constraint firstItem="4RD-v9-wRO" firstAttribute="top" secondItem="sCq-zl-h4s" secondAttribute="bottom" constant="160" id="q0d-Ok-Vek"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sCq-zl-h4s" secondAttribute="trailing" constant="30" id="xVG-Pd-Gcm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rw9-8G-O1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="-278"/>
+        </scene>
+        <!--Onboarding Step Three Controller-->
+        <scene sceneID="Gpa-bT-cc8">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingStepThreeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EBK-tG-A7X" customClass="OnboardingStepThreeController" customModule="BubbleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LSF-Km-wfd"/>
+                        <viewControllerLayoutGuide type="bottom" id="WPU-iC-83o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HVd-jJ-w7q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nullam turpis velit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAW-ML-nev">
+                                <rect key="frame" x="59" y="343.5" width="258" height="44"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <color key="textColor" red="0.42391735409999998" green="0.42391735409999998" blue="0.42391735409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Duis vel massa sed est venenatis dictum sed sed sem. Nullam ligula lorem, volutpat in dolor id, tempor luctus risus." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2c-IW-pyW">
+                                <rect key="frame" x="52" y="407" width="277" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3dU-uj-pJm"/>
+                                </constraints>
+                                <color key="textColor" red="0.6328918147" green="0.6328918147" blue="0.6328918147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="m2c-IW-pyW" secondAttribute="trailing" constant="30" id="1ha-Wu-JU2"/>
+                            <constraint firstItem="m2c-IW-pyW" firstAttribute="leading" secondItem="HVd-jJ-w7q" secondAttribute="leadingMargin" constant="36" id="5RB-Od-3l3"/>
+                            <constraint firstItem="WPU-iC-83o" firstAttribute="top" secondItem="m2c-IW-pyW" secondAttribute="bottom" constant="160" id="Efx-RC-MSD"/>
+                            <constraint firstItem="m2c-IW-pyW" firstAttribute="top" secondItem="PAW-ML-nev" secondAttribute="bottom" constant="20" id="UOg-Xx-Gqn"/>
+                            <constraint firstItem="PAW-ML-nev" firstAttribute="centerX" secondItem="HVd-jJ-w7q" secondAttribute="centerX" id="ewh-RA-Nk6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0FD-AC-Dsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="-278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4U4-CT-z7a">
+            <objects>
+                <navigationController storyboardIdentifier="OnboardingNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TbQ-Yh-sXT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nYw-D0-daR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tg9-sm-ImO" kind="relationship" relationship="rootViewController" id="awV-bn-dbn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQj-j8-X8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2506" y="-278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubbleImage" width="350" height="350"/>
+    </resources>
+</document>

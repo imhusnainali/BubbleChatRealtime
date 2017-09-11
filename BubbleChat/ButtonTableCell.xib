@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttonCellIdentifier" rowHeight="120" id="lKL-Dj-uyG" customClass="ButtonTableCell" customModule="BubbleChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lKL-Dj-uyG" id="kcC-Kp-5dV">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL9-if-HiM" customClass="GradientButton" customModule="BubbleChat" customModuleProvider="target">
+                        <rect key="frame" x="33" y="29" width="338" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="aLl-gG-sb8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <state key="normal" title="Send Message">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tL9-if-HiM" firstAttribute="centerY" secondItem="kcC-Kp-5dV" secondAttribute="centerY" id="Boe-cT-yCw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tL9-if-HiM" secondAttribute="trailing" constant="25" id="gBV-AV-mTV"/>
+                    <constraint firstItem="tL9-if-HiM" firstAttribute="leading" secondItem="kcC-Kp-5dV" secondAttribute="leadingMargin" constant="25" id="xHO-eo-Tp0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="tL9-if-HiM" id="l0Z-q0-VIj"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="33"/>
+        </tableViewCell>
+    </objects>
+</document>
